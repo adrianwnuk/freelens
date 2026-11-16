@@ -1,0 +1,1136 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Gateway API details > BackendTLSPolicyDetails > renders 1`] = `
+<body>
+  <div>
+    <div
+      class="BackendTLSPolicyDetails"
+    >
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Targets
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            Service 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault%2Fservices%2Fapi"
+            >
+              <div
+                class="badge flat"
+              >
+                api
+              </div>
+              <div>
+                api
+              </div>
+            </a>
+             (https)
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerTitle title"
+      >
+        Validation
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Hostname
+        </span>
+        <span
+          class="value"
+        >
+          api.internal
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          CA Certificates
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            ConfigMap 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault%2Fconfigmaps%2Finternal-ca"
+            >
+              <div
+                class="badge flat"
+              >
+                internal-ca
+              </div>
+              <div>
+                internal-ca
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Subject Alt Names
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            Hostname: api.internal
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerTitle title"
+      >
+        Status
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          <a
+            href="?kube-details=%2Fapis%2Fgateway.networking.k8s.io%2Fv1%2Fnamespaces%2Finfra%2Fgateways%2Fpublic"
+          >
+            <div
+              class="badge flat"
+            >
+              infra/public
+            </div>
+            <div>
+              infra/public
+            </div>
+          </a>
+        </span>
+        <span
+          class="value"
+        >
+          <div
+            class="text-textTertiary"
+          >
+            example.com/gateway-controller
+          </div>
+          <div>
+            <div
+              class="badge Accepted"
+              tooltipformatters="[object Object]"
+            >
+              Accepted
+            </div>
+            <div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Reason
+                </div>
+                <div
+                  class="value"
+                >
+                  Accepted
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Status
+                </div>
+                <div
+                  class="value"
+                >
+                  True
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Type
+                </div>
+                <div
+                  class="value"
+                >
+                  Accepted
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Gateway API details > GRPCRouteDetails > renders 1`] = `
+<body>
+  <div>
+    <div
+      class="GRPCRouteDetails"
+    >
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Parents
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            <a
+              href="?kube-details=%2Fapis%2Fgateway.networking.k8s.io%2Fv1%2Fnamespaces%2Finfra%2Fgateways%2Fpublic"
+            >
+              <div
+                class="badge flat"
+              >
+                infra/public
+              </div>
+              <div>
+                infra/public
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerTitle title"
+      >
+        Rules
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Rule 1
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            echo.Echo/Ping
+          </div>
+          <div>
+            ⇢ 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault%2Fservices%2Fecho"
+            >
+              <div
+                class="badge flat"
+              >
+                echo:9000
+              </div>
+              <div>
+                echo:9000
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Gateway API details > GatewayClassDetails > renders 1`] = `
+<body>
+  <div>
+    <div
+      class="GatewayClassDetails"
+    >
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Controller
+        </span>
+        <span
+          class="value"
+        >
+          example.com/gateway-controller
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Description
+        </span>
+        <span
+          class="value"
+        >
+          The example gateways
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Parameters
+        </span>
+        <span
+          class="value"
+        >
+          <a
+            href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Finfra%2Fconfigmaps%2Fgateway-config"
+          >
+            <div
+              class="badge flat"
+            >
+              ConfigMap gateway-config
+            </div>
+            <div>
+              ConfigMap gateway-config
+            </div>
+          </a>
+        </span>
+      </div>
+      <div
+        class="DrawerItem conditions labelsOnly"
+      >
+        <span
+          class="name"
+        >
+          Conditions
+        </span>
+        <span
+          class="value"
+        >
+          <div
+            class="badge Accepted"
+            tooltipformatters="[object Object]"
+          >
+            Accepted
+          </div>
+          <div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                LastTransitionTime
+              </div>
+              <div
+                class="value"
+              >
+                319d
+                 ago 
+                (
+                2026-01-01T00:00:00Z
+                )
+              </div>
+            </div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Message
+              </div>
+              <div
+                class="value"
+              >
+                Handled by the example controller
+              </div>
+            </div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Reason
+              </div>
+              <div
+                class="value"
+              >
+                Accepted
+              </div>
+            </div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Status
+              </div>
+              <div
+                class="value"
+              >
+                True
+              </div>
+            </div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Type
+              </div>
+              <div
+                class="value"
+              >
+                Accepted
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerItem labelsOnly"
+      >
+        <span
+          class="name"
+        >
+          Supported Features
+        </span>
+        <span
+          class="value"
+        >
+          <div
+            class="badge"
+          >
+            Gateway
+          </div>
+          <div
+            class="badge"
+          >
+            HTTPRoute
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Gateway API details > GatewayDetails > renders 1`] = `
+<body>
+  <div>
+    <div
+      class="GatewayDetails"
+    >
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Class
+        </span>
+        <span
+          class="value"
+        >
+          <a
+            href="?kube-details=%2Fapis%2Fgateway.networking.k8s.io%2Fv1%2Fgatewayclasses%2Fexample"
+          >
+            <div
+              class="badge flat"
+            >
+              example
+            </div>
+            <div>
+              example
+            </div>
+          </a>
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Addresses
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            203.0.113.7
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerItem conditions labelsOnly"
+      >
+        <span
+          class="name"
+        >
+          Conditions
+        </span>
+        <span
+          class="value"
+        >
+          <div
+            class="badge Programmed"
+            tooltipformatters="[object Object]"
+          >
+            Programmed
+          </div>
+          <div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Reason
+              </div>
+              <div
+                class="value"
+              >
+                Programmed
+              </div>
+            </div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Status
+              </div>
+              <div
+                class="value"
+              >
+                True
+              </div>
+            </div>
+            <div
+              class="flex gap-2 items-center"
+            >
+              <div
+                class="name"
+              >
+                Type
+              </div>
+              <div
+                class="value"
+              >
+                Programmed
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerTitle title"
+      >
+        Listeners
+      </div>
+      <div
+        class="Table flex flex-col grow shrink-0 basis-0 autoSize"
+      >
+        <div
+          class="TableHead sticky"
+        >
+          <div
+            class="TableCell"
+          >
+            Name
+          </div>
+          <div
+            class="TableCell"
+          >
+            Protocol
+          </div>
+          <div
+            class="TableCell"
+          >
+            Port
+          </div>
+          <div
+            class="TableCell"
+          >
+            Hostname
+          </div>
+          <div
+            class="TableCell"
+          >
+            TLS
+          </div>
+          <div
+            class="TableCell"
+          >
+            Allowed Routes
+          </div>
+          <div
+            class="TableCell"
+          >
+            Attached
+          </div>
+          <div
+            class="TableCell"
+          >
+            Conditions
+          </div>
+        </div>
+        <div
+          class="TableRow"
+        >
+          <div
+            class="TableCell"
+          >
+            http
+          </div>
+          <div
+            class="TableCell"
+          >
+            HTTP
+          </div>
+          <div
+            class="TableCell"
+          >
+            80
+          </div>
+          <div
+            class="TableCell"
+          >
+            *
+          </div>
+          <div
+            class="TableCell"
+          />
+          <div
+            class="TableCell"
+          >
+            from Same
+          </div>
+          <div
+            class="TableCell"
+          >
+            1
+          </div>
+          <div
+            class="TableCell"
+          >
+            <div
+              class="badge Accepted"
+              tooltipformatters="[object Object]"
+            >
+              Accepted
+            </div>
+            <div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Status
+                </div>
+                <div
+                  class="value"
+                >
+                  True
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Type
+                </div>
+                <div
+                  class="value"
+                >
+                  Accepted
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="TableRow"
+        >
+          <div
+            class="TableCell"
+          >
+            https
+          </div>
+          <div
+            class="TableCell"
+          >
+            HTTPS
+          </div>
+          <div
+            class="TableCell"
+          >
+            443
+          </div>
+          <div
+            class="TableCell"
+          >
+            *.example.com
+          </div>
+          <div
+            class="TableCell"
+          >
+            <div>
+              Terminate
+            </div>
+            <div>
+              <a
+                href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Finfra%2Fsecrets%2Fwildcard-cert"
+              >
+                <div
+                  class="badge flat"
+                >
+                  wildcard-cert
+                </div>
+                <div>
+                  wildcard-cert
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="TableCell"
+          >
+            HTTPRoute from All
+          </div>
+          <div
+            class="TableCell"
+          >
+            3
+          </div>
+          <div
+            class="TableCell"
+          >
+            <div
+              class="badge error disabled"
+              tooltipformatters="[object Object]"
+            >
+              ResolvedRefs
+            </div>
+            <div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Status
+                </div>
+                <div
+                  class="value"
+                >
+                  False
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Type
+                </div>
+                <div
+                  class="value"
+                >
+                  ResolvedRefs
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Gateway API details > HTTPRouteDetails > renders 1`] = `
+<body>
+  <div>
+    <div
+      class="HTTPRouteDetails"
+    >
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Hostnames
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            shop.example.com
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Parents
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            <a
+              href="?kube-details=%2Fapis%2Fgateway.networking.k8s.io%2Fv1%2Fnamespaces%2Finfra%2Fgateways%2Fpublic"
+            >
+              <div
+                class="badge flat"
+              >
+                infra/public (https)
+              </div>
+              <div>
+                infra/public (https)
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerTitle title"
+      >
+        Rules
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          Rule 1
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            GET PathPrefix /api
+          </div>
+          <div>
+            Filters: 
+            RequestHeaderModifier
+          </div>
+          <div>
+            ⇢ 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault%2Fservices%2Fapi"
+            >
+              <div
+                class="badge flat"
+              >
+                api:8080
+              </div>
+              <div>
+                api:8080
+              </div>
+            </a>
+             (weight 90)
+          </div>
+          <div>
+            ⇢ 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault%2Fservices%2Fapi-canary"
+            >
+              <div
+                class="badge flat"
+              >
+                api-canary:8080
+              </div>
+              <div>
+                api-canary:8080
+              </div>
+            </a>
+             (weight 10)
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          everything-else
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            Any request
+          </div>
+          <div>
+            ⇢ 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault%2Fservices%2Fweb"
+            >
+              <div
+                class="badge flat"
+              >
+                web:80
+              </div>
+              <div>
+                web:80
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerTitle title"
+      >
+        Status
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          <a
+            href="?kube-details=%2Fapis%2Fgateway.networking.k8s.io%2Fv1%2Fnamespaces%2Finfra%2Fgateways%2Fpublic"
+          >
+            <div
+              class="badge flat"
+            >
+              infra/public (https)
+            </div>
+            <div>
+              infra/public (https)
+            </div>
+          </a>
+        </span>
+        <span
+          class="value"
+        >
+          <div
+            class="text-textTertiary"
+          >
+            example.com/gateway-controller
+          </div>
+          <div>
+            <div
+              class="badge Accepted"
+              tooltipformatters="[object Object]"
+            >
+              Accepted
+            </div>
+            <div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Reason
+                </div>
+                <div
+                  class="value"
+                >
+                  Accepted
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Status
+                </div>
+                <div
+                  class="value"
+                >
+                  True
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Type
+                </div>
+                <div
+                  class="value"
+                >
+                  Accepted
+                </div>
+              </div>
+            </div>
+            <div
+              class="badge ResolvedRefs"
+              tooltipformatters="[object Object]"
+            >
+              ResolvedRefs
+            </div>
+            <div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Reason
+                </div>
+                <div
+                  class="value"
+                >
+                  ResolvedRefs
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Status
+                </div>
+                <div
+                  class="value"
+                >
+                  True
+                </div>
+              </div>
+              <div
+                class="flex gap-2 items-center"
+              >
+                <div
+                  class="name"
+                >
+                  Type
+                </div>
+                <div
+                  class="value"
+                >
+                  ResolvedRefs
+                </div>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Gateway API details > ReferenceGrantDetails > renders 1`] = `
+<body>
+  <div>
+    <div
+      class="ReferenceGrantDetails"
+    >
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          From
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            HTTPRoute.gateway.networking.k8s.io in 
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fdefault"
+            >
+              <div
+                class="badge flat"
+              >
+                default
+              </div>
+              <div>
+                default
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+      <div
+        class="DrawerItem"
+      >
+        <span
+          class="name"
+        >
+          To
+        </span>
+        <span
+          class="value"
+        >
+          <div>
+            Service
+             (all)
+          </div>
+          <div>
+            Secret
+             
+            <a
+              href="?kube-details=%2Fapi%2Fv1%2Fnamespaces%2Fbackends%2Fsecrets%2Fshop-cert"
+            >
+              <div
+                class="badge flat"
+              >
+                shop-cert
+              </div>
+              <div>
+                shop-cert
+              </div>
+            </a>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
