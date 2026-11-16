@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import navigateToReferenceGrantsInjectable from "../../../../common/front-end-routing/routes/cluster/network/reference-grants/navigate-to-reference-grants.injectable";
 import referenceGrantsRouteInjectable from "../../../../common/front-end-routing/routes/cluster/network/reference-grants/reference-grants-route.injectable";
 import routeIsActiveInjectable from "../../../routes/route-is-active.injectable";
-import networkSidebarItemInjectable from "../../network/network-sidebar-item.injectable";
+import gatewayApiSidebarItemInjectable from "../sidebar-item.injectable";
 
 const referenceGrantsSidebarItemInjectable = getInjectable({
   id: "sidebar-item-reference-grants",
@@ -17,12 +17,12 @@ const referenceGrantsSidebarItemInjectable = getInjectable({
     const route = di.inject(referenceGrantsRouteInjectable);
 
     return {
-      parentId: networkSidebarItemInjectable.id,
+      parentId: gatewayApiSidebarItemInjectable.id,
       title: "Reference Grants",
       onClick: di.inject(navigateToReferenceGrantsInjectable),
       isActive: di.inject(routeIsActiveInjectable, route),
       isVisible: route.isEnabled,
-      orderNumber: 36,
+      orderNumber: 50,
     };
   },
 

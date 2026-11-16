@@ -12,10 +12,16 @@ import { registerInjectables as registerGatewaysInjectables } from "./gateways/r
 import { registerInjectables as registerGrpcRoutesInjectables } from "./grpc-routes/register-injectables";
 import { registerInjectables as registerHttpRoutesInjectables } from "./http-routes/register-injectables";
 import { registerInjectables as registerReferenceGrantsInjectables } from "./reference-grants/register-injectables";
+import gatewayApiSidebarItemInjectable from "./sidebar-item.injectable";
 
 import type { DiContainerForInjection } from "@ogre-tools/injectable";
 
 export function registerInjectables(di: DiContainerForInjection): void {
+  try {
+    di.register(gatewayApiSidebarItemInjectable);
+  } catch (e) {
+    /* Ignore duplicate registration */
+  }
   try {
     registerBackendTlsPoliciesInjectables(di);
   } catch (e) {

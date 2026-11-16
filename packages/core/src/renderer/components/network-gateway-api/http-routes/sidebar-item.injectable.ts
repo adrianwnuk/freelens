@@ -8,7 +8,7 @@ import { getInjectable } from "@ogre-tools/injectable";
 import httpRoutesRouteInjectable from "../../../../common/front-end-routing/routes/cluster/network/http-routes/http-routes-route.injectable";
 import navigateToHttpRoutesInjectable from "../../../../common/front-end-routing/routes/cluster/network/http-routes/navigate-to-http-routes.injectable";
 import routeIsActiveInjectable from "../../../routes/route-is-active.injectable";
-import networkSidebarItemInjectable from "../../network/network-sidebar-item.injectable";
+import gatewayApiSidebarItemInjectable from "../sidebar-item.injectable";
 
 const httpRoutesSidebarItemInjectable = getInjectable({
   id: "sidebar-item-http-routes",
@@ -17,12 +17,12 @@ const httpRoutesSidebarItemInjectable = getInjectable({
     const route = di.inject(httpRoutesRouteInjectable);
 
     return {
-      parentId: networkSidebarItemInjectable.id,
+      parentId: gatewayApiSidebarItemInjectable.id,
       title: "HTTP Routes",
       onClick: di.inject(navigateToHttpRoutesInjectable),
       isActive: di.inject(routeIsActiveInjectable, route),
       isVisible: route.isEnabled,
-      orderNumber: 34,
+      orderNumber: 30,
     };
   },
 
