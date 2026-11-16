@@ -10,7 +10,7 @@ import { DrawerItem } from "../drawer";
 import { getClassName, getTooltip } from "./components";
 import { sortConditions } from "./utils";
 
-import type { KubeObjectMetadata, KubeObjectStatus } from "@freelensapp/kube-object";
+import type { Condition, KubeObjectMetadata, KubeObjectStatus } from "@freelensapp/kube-object";
 
 export interface KubeObjectConditionsDrawerProps {
   object: KubeObject;
@@ -34,18 +34,38 @@ export const KubeObjectConditionsDrawer = observer((props: KubeObjectConditionsD
 
   return (
     <DrawerItem name="Conditions" className="conditions" hidden={!conditions?.length} labelsOnly>
-      {sortConditions(conditions, conditionTypePriorities)?.map((condition) => {
-        return (
-          <Badge
-            key={condition.type}
-            label={condition.type}
-            disabled={condition.status === "False"}
-            tooltip={getTooltip(condition, `drawer-${object.getId()}-condition-${condition.type}`)}
-            tooltipFormatters={{ tableView: true }}
-            className={getClassName(condition)}
-          />
-        );
-      })}
+      <ConditionBadges
+        conditions={conditions}
+        idPrefix={`drawer-${object.getId()}`}
+        conditionTypePriorities={conditionTypePriorities}
+      />
     </DrawerItem>
   );
 });
+
+export interface ConditionBadgesProps {
+  conditions: Condition[];
+  /**
+   * Makes the ids of the tooltips unique, when more than one list of conditions is on the page.
+   */
+  idPrefix: string;
+  conditionTypePriorities?: Record<string, number>;
+}
+
+/**
+ * A badge for each condition, with its details in a tooltip.
+ */
+export const ConditionBadges = observer(({ conditions, idPrefix, conditionTypePriorities }: ConditionBadgesProps) => (
+  <>
+    {sortConditions(conditions, conditionTypePriorities)?.map((condition) => (
+      <Badge
+        key={condition.type}
+        label={condition.type}
+        disabled={condition.status === "False"}
+        tooltip={getTooltip(condition, `${idPrefix}-condition-${condition.type}`)}
+        tooltipFormatters={{ tableView: true }}
+        className={getClassName(condition)}
+      />
+    ))}
+  </>
+));

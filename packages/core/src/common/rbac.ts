@@ -16,6 +16,12 @@ export type KubeResource =
   | "configmaps"
   | "ingresses"
   | "ingressclasses"
+  | "gatewayclasses"
+  | "gateways"
+  | "httproutes"
+  | "grpcroutes"
+  | "referencegrants"
+  | "backendtlspolicies"
   | "networkpolicies"
   | "persistentvolumeclaims"
   | "persistentvolumes"
@@ -72,6 +78,11 @@ export interface KubeApiResourceData {
 }
 
 export const apiResourceRecord: Record<KubeResource, KubeApiResourceData> = {
+  backendtlspolicies: {
+    kind: "BackendTLSPolicy",
+    group: "gateway.networking.k8s.io",
+    namespaced: true,
+  },
   clusterroles: {
     kind: "ClusterRole",
     group: "rbac.authorization.k8s.io",
@@ -122,9 +133,29 @@ export const apiResourceRecord: Record<KubeResource, KubeApiResourceData> = {
     group: "",
     namespaced: true,
   },
+  gatewayclasses: {
+    kind: "GatewayClass",
+    group: "gateway.networking.k8s.io",
+    namespaced: false,
+  },
+  gateways: {
+    kind: "Gateway",
+    group: "gateway.networking.k8s.io",
+    namespaced: true,
+  },
+  grpcroutes: {
+    kind: "GRPCRoute",
+    group: "gateway.networking.k8s.io",
+    namespaced: true,
+  },
   horizontalpodautoscalers: {
     kind: "HorizontalPodAutoscaler",
     group: "autoscaling",
+    namespaced: true,
+  },
+  httproutes: {
+    kind: "HTTPRoute",
+    group: "gateway.networking.k8s.io",
     namespaced: true,
   },
   ingresses: {
@@ -171,6 +202,11 @@ export const apiResourceRecord: Record<KubeResource, KubeApiResourceData> = {
     kind: "MutatingWebhookConfiguration",
     group: "admissionregistration.k8s.io",
     namespaced: false,
+  },
+  referencegrants: {
+    kind: "ReferenceGrant",
+    group: "gateway.networking.k8s.io",
+    namespaced: true,
   },
   validatingadmissionpolicies: {
     kind: "ValidatingAdmissionPolicy",

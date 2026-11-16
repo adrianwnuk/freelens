@@ -17,8 +17,8 @@ import type { ApiManager } from "../../common/k8s-api/api-manager";
 import type { KubeApiResource } from "../../common/rbac";
 import type { CustomResourceDefinitionStore } from "../../renderer/components/custom-resource-definitions/store";
 
-const v1ApiBase = "/apis/gateway.networking.k8s.io/v1/httproutes";
-const v1beta1ApiBase = "/apis/gateway.networking.k8s.io/v1beta1/httproutes";
+const v1ApiBase = "/apis/stable.example.com/v1/crontabs";
+const v1beta1ApiBase = "/apis/stable.example.com/v1beta1/crontabs";
 
 // What discovery reports: a custom resource in two served versions, with a
 // subresource, next to resources of the groups Kubernetes defines itself.
@@ -32,19 +32,19 @@ const discoveredResources: KubeApiResource[] = [
     kind: "CertificateSigningRequest",
     namespaced: false,
   },
-  { group: "gateway.networking.k8s.io", version: "v1", apiName: "httproutes", kind: "HTTPRoute", namespaced: true },
+  { group: "stable.example.com", version: "v1", apiName: "crontabs", kind: "CronTab", namespaced: true },
   {
-    group: "gateway.networking.k8s.io",
+    group: "stable.example.com",
     version: "v1",
-    apiName: "httproutes/status",
-    kind: "HTTPRoute",
+    apiName: "crontabs/status",
+    kind: "CronTab",
     namespaced: true,
   },
   {
-    group: "gateway.networking.k8s.io",
+    group: "stable.example.com",
     version: "v1beta1",
-    apiName: "httproutes",
-    kind: "HTTPRoute",
+    apiName: "crontabs",
+    kind: "CronTab",
     namespaced: true,
   },
 ];
@@ -104,7 +104,7 @@ describe("APIs of custom resources from the discovery of the cluster", () => {
       const api = apiManager.getApi(apiBase);
 
       expect(api?.apiBase).toBe(apiBase);
-      expect(api?.kind).toBe("HTTPRoute");
+      expect(api?.kind).toBe("CronTab");
       expect(api?.isNamespaced).toBe(true);
     });
 
