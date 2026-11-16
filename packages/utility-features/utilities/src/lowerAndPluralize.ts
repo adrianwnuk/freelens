@@ -9,7 +9,8 @@
 export function lowerAndPluralize(str: string) {
   const lowerStr = str.toLowerCase();
 
-  if (lowerStr.endsWith("y")) {
+  // A "y" after a consonant becomes "ies" (policy, policies), but not after a vowel (gateway, gateways)
+  if (/[^aeiou]y$/.test(lowerStr)) {
     return lowerStr.replace(/y$/, "ies");
   } else if (
     lowerStr.endsWith("s") ||
